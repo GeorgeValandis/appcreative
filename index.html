@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AppCreative — Unlimited App Creatives</title>
+  <meta name="description" content="Productized service for high-converting app creatives. Flat monthly fee. Cancel anytime." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs/%3E%3Crect rx='10' width='48' height='48' fill='%235b3df5'/%3E%3Cpath d='M12 30c5 4 19 4 24 0-4 7-20 7-24 0zM24 10c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8z' fill='white'/%3E%3C/svg%3E" />
+  <!-- Tailwind via CDN (kein Build nötig) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: "#f3f0ff",
+              100: "#e8e2ff",
+              200: "#c8baff",
+              300: "#a892ff",
+              400: "#8a6eff",
+              500: "#6f4dff",
+              600: "#5b3df5",
+              700: "#4b33cc",
+              800: "#3928a3",
+              900: "#2b1f80"
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-neutral-950 text-neutral-100 antialiased">
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 backdrop-blur border-b border-white/10">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="size-7 rounded-xl bg-brand-600"></div>
+        <span class="font-semibold text-lg">AppCreative</span>
+      </div>
+      <a href="#pricing" class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 transition">Pricing</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-600/20 via-transparent to-transparent pointer-events-none"></div>
+    <div class="mx-auto max-w-6xl px-4 pt-20 pb-12 text-center">
+      <p class="inline-flex items-center gap-2 text-brand-300/90 text-sm border border-brand-300/30 rounded-full px-3 py-1 mb-6">
+        ⚡ New • Productized service
+      </p>
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        Unlimited <span class="text-brand-400">App Creatives</span>,<br class="hidden md:block"> flat monthly fee.
+      </h1>
+      <p class="mt-5 text-neutral-300 max-w-2xl mx-auto">
+        Screenshot sets, App Store videos, banner ads & UGC hooks — delivered async in 24–72h iterations.
+        Pause or cancel anytime.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="#pricing" class="px-6 py-3 rounded-2xl bg-brand-600 hover:bg-brand-500 font-semibold transition">See Pricing</a>
+        <a href="mailto:hello@appcreative.co" class="px-6 py-3 rounded-2xl border border-white/10 hover:bg-white/5 transition">Book a 15-min intro</a>
+      </div>
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+        <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
+          <h3 class="font-semibold">Unlimited requests</h3>
+          <p class="text-neutral-400 mt-1">Add as many tasks as you want to your queue.</p>
+        </div>
+        <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
+          <h3 class="font-semibold">Fast iterations</h3>
+          <p class="text-neutral-400 mt-1">Most updates in 24–72h on business days.</p>
+        </div>
+        <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
+          <h3 class="font-semibold">Fixed monthly</h3>
+          <p class="text-neutral-400 mt-1">Simple pricing. Pause or cancel anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social proof -->
+  <section class="mx-auto max-w-6xl px-4 py-10">
+    <div class="rounded-2xl border border-white/10 p-6 md:p-8 bg-gradient-to-br from-white/5 to-transparent">
+      <p class="text-neutral-300 leading-relaxed">
+        “We boosted conversion by 22% after the first creative cycle — new screenshot copy and a cleaner visual system did the trick.”
+      </p>
+      <p class="mt-3 text-neutral-400 text-sm">— Indie dev, Finance category</p>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-center">Simple pricing</h2>
+    <p class="text-neutral-400 text-center mt-2">Everything you need to ship high-converting creatives.</p>
+
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Starter -->
+      <div class="rounded-2xl border border-white/10 p-6 bg-white/5">
+        <h3 class="font-semibold text-lg">Starter</h3>
+        <p class="text-3xl font-extrabold mt-2">€799<span class="text-base font-medium text-neutral-400">/mo</span></p>
+        <ul class="mt-4 space-y-2 text-neutral-300">
+          <li>• 1 active request</li>
+          <li>• Screenshots (up to 2 langs)</li>
+          <li>• Basic icon & feature graphics</li>
+          <li>• 24–72h iterations</li>
+        </ul>
+        <a href="mailto:hello@appcreative.co?subject=Starter%20Plan" class="mt-6 inline-block w-full text-center px-4 py-3 rounded-xl bg-white/10 hover:bg-white/20 transition">Get started</a>
+      </div>
+
+      <!-- Growth -->
+      <div class="rounded-2xl border border-brand-400/40 p-6 bg-gradient-to-b from-brand-600/10 to-white/5 ring-1 ring-brand-400/30">
+        <div class="inline-flex items-center gap-2 text-xs px-2 py-1 rounded-full bg-brand-600/20 text-brand-200">Most popular</div>
+        <h3 class="font-semibold text-lg mt-3">Growth</h3>
+        <p class="text-3xl font-extrabold mt-2">€1499<span class="text-base font-medium text-neutral-400">/mo</span></p>
+        <ul class="mt-4 space-y-2 text-neutral-300">
+          <li>• 2 active requests</li>
+          <li>• Screenshots + Preview video</li>
+          <li>• A/B copy variants</li>
+          <li>• Priority queue</li>
+        </ul>
+        <a href="mailto:hello@appcreative.co?subject=Growth%20Plan" class="mt-6 inline-block w-full text-center px-4 py-3 rounded-xl bg-brand-600 hover:bg-brand-500 transition">Start Growth</a>
+      </div>
+
+      <!-- Studio -->
+      <div class="rounded-2xl border border-white/10 p-6 bg-white/5">
+        <h3 class="font-semibold text-lg">Studio</h3>
+        <p class="text-3xl font-extrabold mt-2">€2999<span class="text-base font-medium text-neutral-400">/mo</span></p>
+        <ul class="mt-4 space-y-2 text-neutral-300">
+          <li>• 3 active requests</li>
+          <li>• Full funnel: screenshots, video, ads</li>
+          <li>• UGC hooks + scripts</li>
+          <li>• Slack/Discord collab</li>
+        </ul>
+        <a href="mailto:hello@appcreative.co?subject=Studio%20Plan" class="mt-6 inline-block w-full text-center px-4 py-3 rounded-xl bg-white/10 hover:bg-white/20 transition">Talk to us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-2xl font-bold text-center">FAQ</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-4">
+      <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
+        <h3 class="font-semibold">How do requests work?</h3>
+        <p class="text-neutral-400 mt-1">You add tasks to your queue. We pick the top one, deliver, you review, we iterate.</p>
+      </div>
+      <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
+        <h3 class="font-semibold">What tools do you use?</h3>
+        <p class="text-neutral-400 mt-1">Figma for design, After Effects/CapCut for motion, plus a tested copy framework.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="mx-auto max-w-6xl px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-3">
+      <p class="text-neutral-400 text-sm">© <span id="y"></span> AppCreative</p>
+      <a class="text-neutral-300 hover:text-white" href="mailto:hello@appcreative.co">hello@appcreative.co</a>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
