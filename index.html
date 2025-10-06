@@ -3,95 +3,154 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AppCreative — Unlimited App Creatives</title>
-  <meta name="description" content="Productized service for high-converting app creatives. Flat monthly fee. Cancel anytime." />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs/%3E%3Crect rx='10' width='48' height='48' fill='%235b3df5'/%3E%3Cpath d='M12 30c5 4 19 4 24 0-4 7-20 7-24 0zM24 10c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8z' fill='white'/%3E%3C/svg%3E" />
-  <!-- Tailwind via CDN (kein Build nötig) -->
+  <title>AppCreative — High‑converting App Creatives</title>
+  <meta name="description" content="Productized service for high‑converting App Store creatives. Flat monthly fee. Pause or cancel anytime." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
           colors: {
             brand: {
-              50: "#f3f0ff",
-              100: "#e8e2ff",
-              200: "#c8baff",
-              300: "#a892ff",
-              400: "#8a6eff",
-              500: "#6f4dff",
+              50: "#f5f3ff",
+              100: "#ebe7ff",
+              200: "#cdc2ff",
+              300: "#b09dff",
+              400: "#8f72ff",
+              500: "#744dff",
               600: "#5b3df5",
-              700: "#4b33cc",
-              800: "#3928a3",
-              900: "#2b1f80"
+              700: "#4a32c2",
+              800: "#39289a",
+              900: "#2a1f74"
             }
+          },
+          boxShadow: {
+            glow: "0 0 40px 0 rgba(139, 92, 246, 0.35)",
           }
         }
       }
     }
   </script>
+  <style>
+    /* soft gradient background blobs */
+    .bg-blobs::before,
+    .bg-blobs::after {
+      content: "";
+      position: absolute; inset: -10% -10% auto -10%;
+      height: 50vh; filter: blur(80px); opacity: .35; pointer-events: none; z-index: 0;
+      background: radial-gradient(40% 40% at 20% 40%, #5b3df5 0%, transparent 60%),
+                  radial-gradient(40% 40% at 80% 20%, #a78bfa 0%, transparent 60%);
+    }
+    .bg-blobs::after { inset: auto -10% -20% -10%; height: 55vh; opacity: .25; background:
+      radial-gradient(40% 40% at 15% 50%, #22d3ee 0%, transparent 60%),
+      radial-gradient(40% 40% at 85% 60%, #5b3df5 0%, transparent 60%);
+    }
+  </style>
 </head>
-<body class="bg-neutral-950 text-neutral-100 antialiased">
-  <!-- Nav -->
-  <header class="sticky top-0 z-40 backdrop-blur border-b border-white/10">
-    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <div class="size-7 rounded-xl bg-brand-600"></div>
-        <span class="font-semibold text-lg">AppCreative</span>
-      </div>
-      <a href="#pricing" class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 transition">Pricing</a>
+<body class="bg-neutral-950 text-neutral-100 antialiased selection:bg-brand-400/30">
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 border-b border-white/10 backdrop-blur supports-[backdrop-filter]:bg-black/30">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <span class="inline-grid place-items-center rounded-xl bg-brand-600/90 shadow-glow w-8 h-8">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="opacity-95">
+            <rect x="3" y="3" width="8" height="8" rx="2" fill="white"/>
+            <rect x="13" y="3" width="8" height="8" rx="2" fill="white" opacity=".7"/>
+            <rect x="3" y="13" width="8" height="8" rx="2" fill="white" opacity=".7"/>
+            <rect x="13" y="13" width="8" height="8" rx="2" fill="white"/>
+          </svg>
+        </span>
+        <span class="font-semibold tracking-tight">AppCreative</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-neutral-300">
+        <a class="hover:text-white" href="#how">How it works</a>
+        <a class="hover:text-white" href="#pricing">Pricing</a>
+        <a class="hover:text-white" href="#faq">FAQ</a>
+        <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="mailto:hello@appcreative.co">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="relative">
-    <div class="absolute inset-0 bg-gradient-to-b from-brand-600/20 via-transparent to-transparent pointer-events-none"></div>
-    <div class="mx-auto max-w-6xl px-4 pt-20 pb-12 text-center">
-      <p class="inline-flex items-center gap-2 text-brand-300/90 text-sm border border-brand-300/30 rounded-full px-3 py-1 mb-6">
-        ⚡ New • Productized service
-      </p>
-      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
-        Unlimited <span class="text-brand-400">App Creatives</span>,<br class="hidden md:block"> flat monthly fee.
+  <!-- HERO -->
+  <section class="relative overflow-hidden bg-blobs">
+    <div class="relative z-10 mx-auto max-w-7xl px-4 pt-20 pb-14 text-center">
+      <span class="inline-flex items-center gap-2 text-brand-200/90 text-xs border border-brand-300/30 rounded-full px-3 py-1">
+        <span>✨</span> Productized creative studio for apps
+      </span>
+      <h1 class="mt-5 text-4xl md:text-6xl font-extrabold leading-tight">
+        Ship <span class="text-brand-400">App Store creatives</span>
+        that actually convert.
       </h1>
-      <p class="mt-5 text-neutral-300 max-w-2xl mx-auto">
-        Screenshot sets, App Store videos, banner ads & UGC hooks — delivered async in 24–72h iterations.
-        Pause or cancel anytime.
+      <p class="mt-5 text-neutral-300 max-w-3xl mx-auto">
+        Screenshot sets, preview videos, icons and ad creatives — delivered async in 24–72h cycles.
+        Flat monthly fee. Pause or cancel anytime.
       </p>
       <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-        <a href="#pricing" class="px-6 py-3 rounded-2xl bg-brand-600 hover:bg-brand-500 font-semibold transition">See Pricing</a>
-        <a href="mailto:hello@appcreative.co" class="px-6 py-3 rounded-2xl border border-white/10 hover:bg-white/5 transition">Book a 15-min intro</a>
+        <a href="#pricing" class="px-6 py-3 rounded-2xl bg-brand-600 hover:bg-brand-500 font-semibold shadow-glow">See pricing</a>
+        <a href="mailto:hello@appcreative.co?subject=Intro%20Call" class="px-6 py-3 rounded-2xl border border-white/15 hover:bg-white/5">Book a 15‑min intro</a>
       </div>
       <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
         <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
           <h3 class="font-semibold">Unlimited requests</h3>
-          <p class="text-neutral-400 mt-1">Add as many tasks as you want to your queue.</p>
+          <p class="text-neutral-400 mt-1">Queue as many tasks as you like — we work top‑to‑bottom.</p>
         </div>
         <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
-          <h3 class="font-semibold">Fast iterations</h3>
-          <p class="text-neutral-400 mt-1">Most updates in 24–72h on business days.</p>
+          <h3 class="font-semibold">Fast turnarounds</h3>
+          <p class="text-neutral-400 mt-1">Most iterations in 24–72h on business days.</p>
         </div>
         <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
-          <h3 class="font-semibold">Fixed monthly</h3>
-          <p class="text-neutral-400 mt-1">Simple pricing. Pause or cancel anytime.</p>
+          <h3 class="font-semibold">Proven frameworks</h3>
+          <p class="text-neutral-400 mt-1">Copy & visual systems tested on real apps.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Social proof -->
-  <section class="mx-auto max-w-6xl px-4 py-10">
-    <div class="rounded-2xl border border-white/10 p-6 md:p-8 bg-gradient-to-br from-white/5 to-transparent">
-      <p class="text-neutral-300 leading-relaxed">
-        “We boosted conversion by 22% after the first creative cycle — new screenshot copy and a cleaner visual system did the trick.”
-      </p>
-      <p class="mt-3 text-neutral-400 text-sm">— Indie dev, Finance category</p>
+  <!-- HOW IT WORKS -->
+  <section id="how" class="mx-auto max-w-7xl px-4 py-14">
+    <h2 class="text-2xl md:text-3xl font-bold text-center">How it works</h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-5">
+      <div class="rounded-2xl border border-white/10 p-6 bg-white/5">
+        <div class="text-sm text-brand-300 mb-2">Step 1</div>
+        <h3 class="font-semibold">Add to queue</h3>
+        <p class="text-neutral-400 mt-1">Drop tasks in Notion/Discord with goals & assets.</p>
+      </div>
+      <div class="rounded-2xl border border-white/10 p-6 bg-white/5">
+        <div class="text-sm text-brand-300 mb-2">Step 2</div>
+        <h3 class="font-semibold">We design & iterate</h3>
+        <p class="text-neutral-400 mt-1">Receive updates within 24–72h. Comment, we refine.</p>
+      </div>
+      <div class="rounded-2xl border border-white/10 p-6 bg-white/5">
+        <div class="text-sm text-brand-300 mb-2">Step 3</div>
+        <h3 class="font-semibold">Ship & learn</h3>
+        <p class="text-neutral-400 mt-1">Export‑ready files + copy variants. We keep improving.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Pricing -->
-  <section id="pricing" class="mx-auto max-w-6xl px-4 py-12">
+  <!-- (Optional) PORTFOLIO PLACEHOLDER -->
+  <section class="mx-auto max-w-7xl px-4 pb-6">
+    <div class="rounded-2xl border border-white/10 p-6 bg-gradient-to-br from-white/5 to-transparent">
+      <div class="flex items-center justify-between gap-4">
+        <h3 class="text-lg font-semibold">Recent work</h3>
+        <span class="text-xs text-neutral-400">Placeholder – swap with real shots</span>
+      </div>
+      <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="aspect-[9/16] rounded-xl bg-white/5 border border-white/10"></div>
+        <div class="aspect-[9/16] rounded-xl bg-white/5 border border-white/10"></div>
+        <div class="aspect-[9/16] rounded-xl bg-white/5 border border-white/10"></div>
+        <div class="aspect-[9/16] rounded-xl bg-white/5 border border-white/10"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="mx-auto max-w-7xl px-4 py-14">
     <h2 class="text-3xl md:text-4xl font-bold text-center">Simple pricing</h2>
-    <p class="text-neutral-400 text-center mt-2">Everything you need to ship high-converting creatives.</p>
+    <p class="text-neutral-400 text-center mt-2">Everything you need to ship high‑converting creatives.</p>
 
     <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
       <!-- Starter -->
@@ -104,7 +163,7 @@
           <li>• Basic icon & feature graphics</li>
           <li>• 24–72h iterations</li>
         </ul>
-        <a href="mailto:hello@appcreative.co?subject=Starter%20Plan" class="mt-6 inline-block w-full text-center px-4 py-3 rounded-xl bg-white/10 hover:bg-white/20 transition">Get started</a>
+        <a href="mailto:hello@appcreative.co?subject=Starter%20Plan" class="mt-6 inline-block w-full text-center px-4 py-3 rounded-xl bg-white/10 hover:bg-white/20">Get started</a>
       </div>
 
       <!-- Growth -->
@@ -118,7 +177,7 @@
           <li>• A/B copy variants</li>
           <li>• Priority queue</li>
         </ul>
-        <a href="mailto:hello@appcreative.co?subject=Growth%20Plan" class="mt-6 inline-block w-full text-center px-4 py-3 rounded-xl bg-brand-600 hover:bg-brand-500 transition">Start Growth</a>
+        <a href="mailto:hello@appcreative.co?subject=Growth%20Plan" class="mt-6 inline-block w-full text-center px-4 py-3 rounded-xl bg-brand-600 hover:bg-brand-500">Start Growth</a>
       </div>
 
       <!-- Studio -->
@@ -131,31 +190,43 @@
           <li>• UGC hooks + scripts</li>
           <li>• Slack/Discord collab</li>
         </ul>
-        <a href="mailto:hello@appcreative.co?subject=Studio%20Plan" class="mt-6 inline-block w-full text-center px-4 py-3 rounded-xl bg-white/10 hover:bg-white/20 transition">Talk to us</a>
+        <a href="mailto:hello@appcreative.co?subject=Studio%20Plan" class="mt-6 inline-block w-full text-center px-4 py-3 rounded-xl bg-white/10 hover:bg-white/20">Talk to us</a>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="mx-auto max-w-6xl px-4 py-12">
-    <h2 class="text-2xl font-bold text-center">FAQ</h2>
+  <section id="faq" class="mx-auto max-w-7xl px-4 pb-16">
+    <h2 class="text-2xl md:text-3xl font-bold text-center">FAQ</h2>
     <div class="mt-6 grid md:grid-cols-2 gap-4">
-      <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
-        <h3 class="font-semibold">How do requests work?</h3>
-        <p class="text-neutral-400 mt-1">You add tasks to your queue. We pick the top one, deliver, you review, we iterate.</p>
-      </div>
-      <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
-        <h3 class="font-semibold">What tools do you use?</h3>
-        <p class="text-neutral-400 mt-1">Figma for design, After Effects/CapCut for motion, plus a tested copy framework.</p>
-      </div>
+      <details class="group p-5 rounded-2xl border border-white/10 bg-white/5 open:bg-white/10 transition">
+        <summary class="cursor-pointer font-medium list-none flex items-center justify-between">How do requests work?<span class="text-neutral-400 group-open:rotate-45 transition">＋</span></summary>
+        <p class="text-neutral-400 mt-3">You add tasks to your queue. We pick the top one, deliver, you review, we iterate until it ships.</p>
+      </details>
+      <details class="group p-5 rounded-2xl border border-white/10 bg-white/5 open:bg-white/10 transition">
+        <summary class="cursor-pointer font-medium list-none flex items-center justify-between">What tools do you use?<span class="text-neutral-400 group-open:rotate-45 transition">＋</span></summary>
+        <p class="text-neutral-400 mt-3">Figma for design, After Effects/CapCut for motion, plus our copy frameworks. Final exports in all required sizes.</p>
+      </details>
+      <details class="group p-5 rounded-2xl border border-white/10 bg-white/5 open:bg-white/10 transition">
+        <summary class="cursor-pointer font-medium list-none flex items-center justify-between">Can I pause or cancel?<span class="text-neutral-400 group-open:rotate-45 transition">＋</span></summary>
+        <p class="text-neutral-400 mt-3">Yes. Pause anytime and resume when you have new work. No long‑term contracts.</p>
+      </details>
+      <details class="group p-5 rounded-2xl border border-white/10 bg-white/5 open:bg-white/10 transition">
+        <summary class="cursor-pointer font-medium list-none flex items-center justify-between">Do you do ad creatives, too?<span class="text-neutral-400 group-open:rotate-45 transition">＋</span></summary>
+        <p class="text-neutral-400 mt-3">Yes — static and motion. We also provide UGC hook scripts and caption variants on Growth+ plans.</p>
+      </details>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="border-t border-white/10">
-    <div class="mx-auto max-w-6xl px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-3">
-      <p class="text-neutral-400 text-sm">© <span id="y"></span> AppCreative</p>
-      <a class="text-neutral-300 hover:text-white" href="mailto:hello@appcreative.co">hello@appcreative.co</a>
+    <div class="mx-auto max-w-7xl px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-3 text-sm">
+      <p class="text-neutral-400">© <span id="y"></span> AppCreative</p>
+      <div class="flex items-center gap-4">
+        <a class="text-neutral-300 hover:text-white" href="mailto:hello@appcreative.co">hello@appcreative.co</a>
+        <a class="text-neutral-400 hover:text-white" href="#">Imprint</a>
+        <a class="text-neutral-400 hover:text-white" href="#">Privacy</a>
+      </div>
     </div>
   </footer>
 
