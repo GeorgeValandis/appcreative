@@ -3,139 +3,267 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AppCreative — Unlimited App & Ad Creatives for Indie Developers</title>
-  <meta name="description" content="I’m testing a new productized design service for indie devs — high‑performing App Store screenshots, icons & ad creatives, delivered fast. Join the early‑access list." />
-  <meta name="theme-color" content="#6d28d9" />
-  <meta property="og:title" content="AppCreative — Unlimited App & Ad Creatives for Indie Developers" />
-  <meta property="og:description" content="High‑performing App Store screenshots, icons & ad creatives — delivered fast. Join the early‑access list." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://dummyimage.com/1200x630/1f1235/f3e8ff&text=AppCreative" />
+  <title>AppCreative — Unlimited App Creatives for €599/mo</title>
+  <meta name="description" content="Unlimited app creatives on a simple monthly plan. Screenshots, preview videos, icons & ad creatives. €599/mo. Pause or cancel anytime." />
+  <meta name="theme-color" content="#7d63ff" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
+          fontFamily: {
+            sans: ["Inter","ui-sans-serif","system-ui"],
+            serif: ["Playfair Display","ui-serif","Georgia"]
+          },
           colors: {
             brand: {
-              50:  '#f5f3ff',
-              100: '#ede9fe',
-              200: '#ddd6fe',
-              300: '#c4b5fd',
-              400: '#a78bfa',
-              500: '#8b5cf6',
-              600: '#7c3aed',
-              700: '#6d28d9',
-              800: '#5b21b6',
-              900: '#4c1d95'
+              50:"#f7f4ff",100:"#eee9ff",200:"#d7ccff",300:"#c0b0ff",
+              400:"#9a82ff",500:"#7d63ff",600:"#624cf2",700:"#4f3dc0",
+              800:"#3c2f92",900:"#2b226d"
             }
           },
           boxShadow: {
-            glow: '0 10px 40px -10px rgba(124, 58, 237, 0.35)'
-          }
+            card: "0 6px 20px 0 rgba(16,24,40,.06)",
+            glow: "0 0 40px rgba(125,99,255,.22)"
+          },
+          borderRadius: { xl2: "1.25rem" }
         }
       }
     }
   </script>
   <style>
-    /* Smooth fonts */
-    html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    .blob-gradient{
+      background:
+        radial-gradient(40% 40% at 15% 20%, #ffd1e3 0%, transparent 60%),
+        radial-gradient(40% 40% at 85% 25%, #c5e6ff 0%, transparent 60%),
+        radial-gradient(50% 50% at 50% 95%, #d9d6ff 0%, transparent 60%);
+    }
   </style>
 </head>
-<body class="min-h-screen bg-gradient-to-b from-zinc-950 via-zinc-950 to-zinc-950 text-white">
-  <!-- Subtle radial glow background -->
-  <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10">
-    <div class="absolute left-1/2 top-[-10%] h-[60rem] w-[60rem] -translate-x-1/2 rounded-full bg-brand-700/25 blur-[140px]"></div>
-  </div>
+<body class="bg-white text-neutral-900 antialiased selection:bg-brand-200">
 
-  <main class="relative mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center px-6">
-    <header class="absolute top-6 left-0 right-0 mx-auto flex w-full max-w-6xl items-center justify-between">
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 bg-white/75 backdrop-blur border-b border-black/5">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3">
-        <div class="grid h-9 w-9 place-items-center rounded-2xl bg-brand-700/40 ring-1 ring-brand-400/30 shadow-glow">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-90">
-            <path d="M4 12c0-4.418 3.582-8 8-8a8 8 0 0 1 7.3 4.6c.5 1-1.1 1.9-1.8.9A6 6 0 0 0 12 6c-3.314 0-6 2.686-6 6s2.686 6 6 6c2.1 0 3.95-1.08 5.02-2.71.65-.96 2.27-.13 1.74.9A8 8 0 0 1 12 20c-4.418 0-8-3.582-8-8Z" fill="currentColor"/>
-            <path d="M9.5 12c0-1.38 1.57-2.5 3.5-2.5S16.5 10.62 16.5 12 14.93 14.5 12 14.5 9.5 13.38 9.5 12Z" fill="currentColor"/>
+        <span class="inline-grid place-items-center rounded-xl bg-neutral-900 text-white w-8 h-8">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="opacity-95" aria-hidden="true">
+            <rect x="3" y="3" width="8" height="8" rx="2"/>
+            <rect x="13" y="3" width="8" height="8" rx="2" opacity=".7"/>
+            <rect x="3" y="13" width="8" height="8" rx="2" opacity=".7"/>
+            <rect x="13" y="13" width="8" height="8" rx="2"/>
           </svg>
-        </div>
-        <span class="text-lg font-semibold tracking-tight">AppCreative</span>
+        </span>
+        <span class="font-semibold tracking-tight">AppCreative</span>
       </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm/6 text-zinc-300">
-        <span class="opacity-70">Soft‑launch preview</span>
+      <nav class="hidden md:flex items-center gap-3 text-sm">
+        <a class="px-3 py-1.5 rounded-full hover:bg-black/5" href="#work">Work</a>
+        <a class="px-3 py-1.5 rounded-full hover:bg-black/5" href="#how">How it works</a>
+        <a class="px-3 py-1.5 rounded-full hover:bg-black/5" href="#pricing">Pricing</a>
+        <a class="px-3 py-1.5 rounded-full border border-black/10 hover:bg-black/5" href="mailto:hello@appcreative.co">Login</a>
+        <a class="px-3 py-1.5 rounded-full border border-black/10 hover:bg-black/5" href="mailto:hello@appcreative.co?subject=Intro%20Call">Book a call</a>
+        <a class="px-4 py-1.5 rounded-full bg-neutral-900 text-white hover:opacity-90" href="#pricing">See pricing</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <section class="mt-10 grid w-full grid-cols-1 items-center gap-10 md:mt-0 md:grid-cols-12">
-      <div class="md:col-span-7">
-        <h1 class="text-4xl font-extrabold tracking-tight md:text-6xl">
-          <span class="block">Unlimited App Store & Ad Creatives</span>
-          <span class="block text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-brand-200">for Indie Developers.</span>
+  <!-- HERO (lighter / airy) -->
+  <section class="relative">
+    <div class="mx-auto max-w-6xl px-4 pt-16 md:pt-20 pb-6 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
+          Unlimited app & ad creatives<br/>
+          for <span class="font-serif italic font-semibold">indie developers</span>
         </h1>
-        <p class="mt-6 max-w-2xl text-base text-zinc-300 md:text-lg">
-          I’m testing a new design service for indie devs — high‑performing screenshots, icons & ad creatives, delivered fast. If that sounds useful, join the early‑access list to help shape pricing and scope.
+        <p class="mt-4 text-neutral-600 max-w-xl">
+          Screenshots, preview videos, icons, and ad creatives on a flat monthly plan. Pause or cancel anytime.
         </p>
-
-        <div class="mt-8 flex flex-wrap items-center gap-4">
-          <!-- REPLACE the href with your Tally/Typedream form URL -->
-          <a href="https://tally.so/r/waitlist" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-2xl bg-brand-600 px-5 py-3 font-semibold text-white shadow-glow ring-1 ring-brand-400/30 transition hover:-translate-y-0.5 hover:bg-brand-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-300">
-            Join Waitlist
-          </a>
-          <span class="text-sm text-zinc-400">No spam. Just 2–3 emails during validation.</span>
+        <div class="mt-6 flex items-center gap-3">
+          <a href="#pricing" class="px-5 py-3 rounded-full bg-neutral-900 text-white hover:opacity-90">See pricing</a>
+          <a href="mailto:hello@appcreative.co?subject=Intro%20Call" class="px-5 py-3 rounded-full border border-black/10 hover:bg-black/5">Book a 15‑min intro call</a>
         </div>
+      </div>
 
-        <ul class="mt-10 flex flex-wrap gap-3 text-sm text-zinc-400">
-          <li class="inline-flex items-center gap-2 rounded-full bg-zinc-800/60 px-3 py-1 ring-1 ring-white/5">App Store screenshots</li>
-          <li class="inline-flex items-center gap-2 rounded-full bg-zinc-800/60 px-3 py-1 ring-1 ring-white/5">Icons & variants</li>
-          <li class="inline-flex items-center gap-2 rounded-full bg-zinc-800/60 px-3 py-1 ring-1 ring-white/5">Ad creatives (static & motion)</li>
-          <li class="inline-flex items-center gap-2 rounded-full bg-zinc-800/60 px-3 py-1 ring-1 ring-white/5">Same‑week turnaround</li>
+      <!-- Right promo card -->
+      <div class="relative">
+        <div class="absolute -inset-6 blob-gradient rounded-3xl opacity-60"></div>
+        <div class="relative rounded-3xl bg-white shadow-card border border-black/5 p-5 md:p-6">
+          <div class="flex items-center justify-between">
+            <span class="inline-flex items-center gap-2 text-sm">
+              <span class="size-2 rounded-full bg-green-500"></span> Open slots
+            </span>
+            <span class="text-xs text-neutral-500">Avg. 24–72h updates</span>
+          </div>
+          <div class="mt-4 rounded-2xl bg-neutral-50 border border-black/5 p-5 text-center">
+            <div class="text-sm text-neutral-500 mb-1">Join AppCreative</div>
+            <div class="text-2xl font-bold">One subscription to rule them all.</div>
+            <a href="#pricing" class="mt-4 inline-flex justify-center items-center w-full rounded-full bg-neutral-900 text-white px-4 py-2.5">See pricing</a>
+            <p class="text-xs text-neutral-500 mt-2">Or email <a class="underline" href="mailto:hello@appcreative.co">hello@appcreative.co</a></p>
+          </div>
+          <div class="mt-5 grid grid-cols-3 gap-3 text-center">
+            <div class="rounded-xl bg-neutral-50 border border-black/5 p-3">
+              <div class="text-lg font-bold">€599</div>
+              <div class="text-xs text-neutral-500">per month</div>
+            </div>
+            <div class="rounded-xl bg-neutral-50 border border-black/5 p-3">
+              <div class="text-lg font-bold">Unlimited</div>
+              <div class="text-xs text-neutral-500">requests</div>
+            </div>
+            <div class="rounded-xl bg-neutral-50 border border-black/5 p-3">
+              <div class="text-lg font-bold">Async</div>
+              <div class="text-xs text-neutral-500">no meetings</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider headline  -->
+    <div class="mx-auto max-w-4xl px-4 mt-6 md:mt-2 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">
+        The way app creatives <span class="font-serif italic">should’ve</span> been done in the first place
+      </h2>
+    </div>
+  </section>
+
+  <!-- Three colorful tiles -->
+  <section class="mx-auto max-w-6xl px-4 pt-10 md:pt-14">
+    <div class="grid md:grid-cols-3 gap-5">
+      <div class="rounded-3xl p-6 text-white shadow-glow" style="background:linear-gradient(135deg,#ff9a76 0%,#ff5dc8 100%);">
+        <h3 class="text-lg font-semibold">Subscribe</h3>
+        <p class="mt-1 text-white/90">Join the monthly plan and request as many designs as you’d like.</p>
+      </div>
+      <div class="rounded-3xl p-6 text-white shadow-glow" style="background:linear-gradient(135deg,#00d0ff 0%,#7d63ff 100%);">
+        <h3 class="text-lg font-semibold">Request</h3>
+        <p class="mt-1 text-white/90">Queue your tasks—from App Store screenshots to icons and ads.</p>
+      </div>
+      <div class="rounded-3xl p-6 text-white shadow-glow" style="background:linear-gradient(135deg,#ffb86b 0%,#ff4b8a 100%);">
+        <h3 class="text-lg font-semibold">Receive</h3>
+        <p class="mt-1 text-white/90">Get updates in 24–72h on average. Iterate fast. Ship faster.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social proof strip -->
+  <section class="border-y border-black/5 mt-12">
+    <div class="mx-auto max-w-6xl px-4 py-6 text-center text-sm text-neutral-600">
+      Trusted by indie developers & small studios — built for shipping, not meetings.
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="mx-auto max-w-6xl px-4 py-14">
+    <h2 class="text-2xl md:text-3xl font-bold text-center">Recent work</h2>
+    <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="aspect-[9/16] rounded-2xl bg-neutral-100 border border-black/5"></div>
+      <div class="aspect-[9/16] rounded-2xl bg-neutral-100 border border-black/5"></div>
+      <div class="aspect-[9/16] rounded-2xl bg-neutral-100 border border-black/5"></div>
+      <div class="aspect-[9/16] rounded-2xl bg-neutral-100 border border-black/5"></div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="mx-auto max-w-6xl px-4 pb-4">
+    <h2 class="text-2xl md:text-3xl font-bold text-center">How it works</h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-5">
+      <div class="rounded-2xl border border-black/5 bg-white p-6 shadow-card">
+        <div class="text-sm text-neutral-500 mb-2">01</div>
+        <h3 class="font-semibold">Brief in Notion/Discord</h3>
+        <p class="text-neutral-600 mt-1">Share goals, platform, and assets. We ask only what’s essential.</p>
+      </div>
+      <div class="rounded-2xl border border-black/5 bg-white p-6 shadow-card">
+        <div class="text-sm text-neutral-500 mb-2">02</div>
+        <h3 class="font-semibold">Design & Iterate</h3>
+        <p class="text-neutral-600 mt-1">Receive updates within 24–72h. Comment, we refine.</p>
+      </div>
+      <div class="rounded-2xl border border-black/5 bg-white p-6 shadow-card">
+        <div class="text-sm text-neutral-500 mb-2">03</div>
+        <h3 class="font-semibold">Ship it</h3>
+        <p class="text-neutral-600 mt-1">Export‑ready files in all sizes plus copy variants.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING (single plan) -->
+  <section id="pricing" class="mx-auto max-w-6xl px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-bold text-center">One simple plan</h2>
+    <p class="text-neutral-600 text-center mt-2">Everything you need. No surprises.</p>
+
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+      <div class="rounded-3xl border border-black/5 bg-white p-7 md:p-8 shadow-card">
+        <h3 class="text-lg font-semibold">AppCreative</h3>
+        <p class="text-5xl font-extrabold mt-3 tracking-tight">€599<span class="text-base font-medium text-neutral-500">/mo</span></p>
+        <ul class="mt-5 space-y-2 text-neutral-700">
+          <li>• Unlimited requests (1 active at a time)</li>
+          <li>• App Store screenshots (iOS & Android)</li>
+          <li>• Preview video / motion snippets</li>
+          <li>• Icons, feature graphics, promo banners</li>
+          <li>• Copy frameworks & A/B variants</li>
+          <li>• 24–72h iterations, async</li>
+          <li>• Source files included</li>
+        </ul>
+        <a href="mailto:hello@appcreative.co?subject=Get%20Started%20for%20599" class="mt-7 inline-block w-full text-center px-4 py-3 rounded-full bg-neutral-900 text-white hover:opacity-90">Get started</a>
+        <p class="text-xs text-neutral-500 mt-3">Pause or cancel anytime.</p>
+      </div>
+
+      <div class="rounded-3xl border border-black/5 bg-white p-7 md:p-8 shadow-card">
+        <h4 class="font-semibold">What’s included</h4>
+        <ul class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-neutral-700 text-sm">
+          <li>✓ Store screenshot systems</li>
+          <li>✓ Preview video edits</li>
+          <li>✓ Icon & feature graphic</li>
+          <li>✓ Ad creatives (static & motion)</li>
+          <li>✓ UGC hook scripts</li>
+          <li>✓ Localization support</li>
+        </ul>
+        <h4 class="font-semibold mt-6">What’s not</h4>
+        <ul class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-neutral-500 text-sm">
+          <li>✗ Full brand re‑designs</li>
+          <li>✗ In‑app feature development</li>
+          <li>✗ Long meetings</li>
+          <li>✗ Paid media buying</li>
         </ul>
       </div>
+    </div>
+  </section>
 
-      <div class="md:col-span-5">
-        <div class="relative mx-auto w-full max-w-[32rem] overflow-hidden rounded-3xl border border-white/10 bg-zinc-900/50 p-6 shadow-2xl ring-1 ring-white/10 backdrop-blur">
-          <div class="absolute inset-x-6 top-6 rounded-2xl bg-gradient-to-br from-brand-600/15 to-brand-400/10 p-px">
-            <div class="rounded-2xl bg-zinc-950/60 p-4">
-              <p class="text-xs uppercase tracking-wider text-zinc-400">How it works</p>
-              <ol class="mt-3 space-y-2 text-sm text-zinc-300">
-                <li class="flex gap-3"><span class="mt-0.5 h-5 w-5 shrink-0 grid place-items-center rounded-md bg-brand-600/30 text-xs font-bold">1</span><span>Join the early‑access list (2 minutes).</span></li>
-                <li class="flex gap-3"><span class="mt-0.5 h-5 w-5 shrink-0 grid place-items-center rounded-md bg-brand-600/30 text-xs font-bold">2</span><span>Answer 3 quick questions (needs, budget, timeline).</span></li>
-                <li class="flex gap-3"><span class="mt-0.5 h-5 w-5 shrink-0 grid place-items-center rounded-md bg-brand-600/30 text-xs font-bold">3</span><span>Get first‑come access & founding‑member pricing.</span></li>
-              </ol>
-            </div>
-          </div>
+  <!-- FAQ -->
+  <section id="faq" class="mx-auto max-w-6xl px-4 pb-16">
+    <h2 class="text-2xl md:text-3xl font-bold text-center">FAQ</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-4">
+      <details class="group p-5 rounded-2xl border border-black/5 bg-white open:shadow-card transition">
+        <summary class="cursor-pointer font-medium list-none flex items-center justify-between">How fast are turnarounds?<span class="text-neutral-500 group-open:rotate-45 transition">＋</span></summary>
+        <p class="text-neutral-600 mt-3">Usually 24–72 hours on business days per active request.</p>
+      </details>
+      <details class="group p-5 rounded-2xl border border-black/5 bg-white open:shadow-card transition">
+        <summary class="cursor-pointer font-medium list-none flex items-center justify-between">How do I submit tasks?<span class="text-neutral-500 group-open:rotate-45 transition">＋</span></summary>
+        <p class="text-neutral-600 mt-3">Via Notion/Discord or email. You’ll get a simple template on day one.</p>
+      </details>
+      <details class="group p-5 rounded-2xl border border-black/5 bg-white open:shadow-card transition">
+        <summary class="cursor-pointer font-medium list-none flex items-center justify-between">Can I pause?<span class="text-neutral-500 group-open:rotate-45 transition">＋</span></summary>
+        <p class="text-neutral-600 mt-3">Yes, pause anytime and resume later. No minimum term.</p>
+      </details>
+      <details class="group p-5 rounded-2xl border border-black/5 bg-white open:shadow-card transition">
+        <summary class="cursor-pointer font-medium list-none flex items-center justify-between">Do I get source files?<span class="text-neutral-500 group-open:rotate-45 transition">＋</span></summary>
+        <p class="text-neutral-600 mt-3">Absolutely. Final assets plus Figma / After Effects sources are yours.</p>
+      </details>
+    </div>
+  </section>
 
-          <div class="mt-48" />
-          <div class="mt-36 space-y-4 text-sm text-zinc-400">
-            <div class="flex items-center gap-3 rounded-2xl bg-zinc-800/40 p-4 ring-1 ring-white/5">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="opacity-80">
-                <path d="M12 2a10 10 0 1 0 10 10A10.01 10.01 0 0 0 12 2Zm-1 15-4-4 1.41-1.41L11 13.17l5.59-5.58L18 9Z" fill="currentColor"/>
-              </svg>
-              <span>One active request at a time → true unlimited.</span>
-            </div>
-            <div class="flex items-center gap-3 rounded-2xl bg-zinc-800/40 p-4 ring-1 ring-white/5">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="opacity-80">
-                <path d="M5 12h14v2H5z" fill="currentColor"/>
-                <path d="M12 5h2v14h-2z" fill="currentColor"/>
-              </svg>
-              <span>App Store, Google Play, Meta/TikTok ads, product shots.</span>
-            </div>
-            <div class="flex items-center gap-3 rounded-2xl bg-zinc-800/40 p-4 ring-1 ring-white/5">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="opacity-80">
-                <path d="M12 6a6 6 0 1 0 6 6 6.007 6.007 0 0 0-6-6Zm0 10a4 4 0 1 1 4-4 4.005 4.005 0 0 1-4 4Z" fill="currentColor"/>
-                <path d="M12 2v2m0 16v2m8-10h2M2 12H0m17.657-5.657 1.414-1.414M4.929 19.071l-1.414 1.414m0-14.142L4.93 4.93m14.142 14.142 1.414 1.414" stroke="currentColor" stroke-width="1.5"/>
-              </svg>
-              <span>Fast iterations, async feedback, source files included.</span>
-            </div>
-          </div>
-        </div>
+  <!-- FOOTER -->
+  <footer class="border-top border-black/5">
+    <div class="mx-auto max-w-6xl px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-3 text-sm">
+      <p class="text-neutral-600">© <span id="y"></span> AppCreative</p>
+      <div class="flex items-center gap-4">
+        <a class="text-neutral-700 hover:underline" href="mailto:hello@appcreative.co">hello@appcreative.co</a>
+        <a class="text-neutral-500 hover:underline" href="#">Imprint</a>
+        <a class="text-neutral-500 hover:underline" href="#">Privacy</a>
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <footer class="mt-16 pb-10 text-center text-xs text-zinc-500">
-      <p>Made by an indie dev for indie devs • © <span id="y"></span> AppCreative</p>
-      <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
-    </footer>
-  </main>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
