@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AppCreative — Unlimited App Creatives for €599/mo</title>
-  <meta name="description" content="Unlimited app creatives on a simple monthly plan. Screenshots, preview videos, icons & ad creatives. €599/mo. Pause or cancel anytime." />
+  <title>AppCreative — Early‑Access (Soft Launch)</title>
+  <meta name="description" content="I’m validating a new productized design service for indie devs — high‑performing App Store screenshots, icons & ad creatives. Join the early‑access waitlist and help shape pricing & scope." />
   <meta name="theme-color" content="#7d63ff" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
@@ -44,8 +44,18 @@
 </head>
 <body class="bg-white text-neutral-900 antialiased selection:bg-brand-200">
 
+  <!-- Announcement bar -->
+  <div class="bg-neutral-50 border-b border-black/5">
+    <div class="mx-auto max-w-6xl px-4 py-2 text-center text-sm">
+      <span class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1">
+        <span class="size-1.5 rounded-full bg-emerald-500"></span>
+        <strong>Soft launch:</strong> collecting honest feedback & early‑access signups.
+      </span>
+    </div>
+  </div>
+
   <!-- NAV -->
-  <header class="sticky top-0 z-40 bg-white/75 backdrop-blur border-b border-black/5">
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-black/5">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3">
         <span class="inline-grid place-items-center rounded-xl bg-neutral-900 text-white w-8 h-8">
@@ -61,101 +71,85 @@
       <nav class="hidden md:flex items-center gap-3 text-sm">
         <a class="px-3 py-1.5 rounded-full hover:bg-black/5" href="#work">Work</a>
         <a class="px-3 py-1.5 rounded-full hover:bg-black/5" href="#how">How it works</a>
-        <a class="px-3 py-1.5 rounded-full hover:bg-black/5" href="#pricing">Pricing</a>
-        <a class="px-3 py-1.5 rounded-full border border-black/10 hover:bg-black/5" href="mailto:hello@appcreative.co">Login</a>
-        <a class="px-3 py-1.5 rounded-full border border-black/10 hover:bg-black/5" href="mailto:hello@appcreative.co?subject=Intro%20Call">Book a call</a>
-        <a class="px-4 py-1.5 rounded-full bg-neutral-900 text-white hover:opacity-90" href="#pricing">See pricing</a>
+        <a class="px-3 py-1.5 rounded-full hover:bg-black/5" href="#why">Why now</a>
+        <a class="px-4 py-1.5 rounded-full bg-neutral-900 text-white hover:opacity-90" href="#waitlist">Join waitlist</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO (lighter / airy) -->
+  <!-- HERO -->
   <section class="relative">
-    <div class="mx-auto max-w-6xl px-4 pt-16 md:pt-20 pb-6 grid md:grid-cols-2 gap-10 items-center">
+    <div class="mx-auto max-w-6xl px-4 pt-14 md:pt-20 pb-6 grid md:grid-cols-2 gap-10 items-center">
       <div>
         <h1 class="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
-          Unlimited app & ad creatives<br/>
-          for <span class="font-serif italic font-semibold">indie developers</span>
+          Unlimited app & ad creatives —
+          <span class="font-serif italic font-semibold">early‑access</span>
         </h1>
         <p class="mt-4 text-neutral-600 max-w-xl">
-          Screenshots, preview videos, icons, and ad creatives on a flat monthly plan. Pause or cancel anytime.
+          I’m testing a new design service for indie devs: high‑performing App Store screenshots, icons & ad creatives — delivered fast. If this would help you ship more, join the waitlist and (optionally) answer 3 questions to shape pricing and scope.
         </p>
         <div class="mt-6 flex items-center gap-3">
-          <a href="#pricing" class="px-5 py-3 rounded-full bg-neutral-900 text-white hover:opacity-90">See pricing</a>
-          <a href="mailto:hello@appcreative.co?subject=Intro%20Call" class="px-5 py-3 rounded-full border border-black/10 hover:bg-black/5">Book a 15‑min intro call</a>
+          <a href="#waitlist" class="px-5 py-3 rounded-full bg-neutral-900 text-white hover:opacity-90">Join waitlist</a>
+          <a href="#work" class="px-5 py-3 rounded-full border border-black/10 hover:bg-black/5">See sample work</a>
         </div>
+        <p class="mt-3 text-xs text-neutral-500">No spam. You’ll receive 2–3 emails during validation.</p>
       </div>
 
-      <!-- Right promo card -->
+      <!-- Right promo card (what you get) -->
       <div class="relative">
-        <div class="absolute -inset-6 blob-gradient rounded-3xl opacity-60"></div>
+        <div class="absolute -inset-6 blob-gradient rounded-3xl opacity-60" aria-hidden="true"></div>
         <div class="relative rounded-3xl bg-white shadow-card border border-black/5 p-5 md:p-6">
-          <div class="flex items-center justify-between">
-            <span class="inline-flex items-center gap-2 text-sm">
-              <span class="size-2 rounded-full bg-green-500"></span> Open slots
-            </span>
-            <span class="text-xs text-neutral-500">Avg. 24–72h updates</span>
+          <div class="flex items-start justify-between gap-6">
+            <div>
+              <div class="text-sm text-neutral-500">Founding‑member perks</div>
+              <ul class="mt-2 space-y-2 text-sm text-neutral-700">
+                <li>• First‑come access (limited slots)</li>
+                <li>• Founding‑member pricing</li>
+                <li>• Influence the roadmap & deliverables</li>
+              </ul>
+            </div>
+            <span class="inline-flex items-center gap-2 rounded-full bg-emerald-50 text-emerald-700 px-3 py-1 text-xs border border-emerald-200">Open</span>
           </div>
-          <div class="mt-4 rounded-2xl bg-neutral-50 border border-black/5 p-5 text-center">
-            <div class="text-sm text-neutral-500 mb-1">Join AppCreative</div>
-            <div class="text-2xl font-bold">One subscription to rule them all.</div>
-            <a href="#pricing" class="mt-4 inline-flex justify-center items-center w-full rounded-full bg-neutral-900 text-white px-4 py-2.5">See pricing</a>
-            <p class="text-xs text-neutral-500 mt-2">Or email <a class="underline" href="mailto:hello@appcreative.co">hello@appcreative.co</a></p>
-          </div>
-          <div class="mt-5 grid grid-cols-3 gap-3 text-center">
-            <div class="rounded-xl bg-neutral-50 border border-black/5 p-3">
-              <div class="text-lg font-bold">€599</div>
-              <div class="text-xs text-neutral-500">per month</div>
+          <div class="mt-5 rounded-2xl bg-neutral-50 border border-black/5 p-5">
+            <p class="text-sm text-neutral-600">What would you expect to pay for an unlimited plan?</p>
+            <div class="mt-3 grid grid-cols-2 gap-2 text-sm">
+              <span class="rounded-full border border-black/10 bg-white px-3 py-1.5 text-center">€499</span>
+              <span class="rounded-full border border-black/10 bg-white px-3 py-1.5 text-center">€999</span>
+              <span class="rounded-full border border-black/10 bg-white px-3 py-1.5 text-center">€1499</span>
+              <span class="rounded-full border border-black/10 bg-white px-3 py-1.5 text-center">Other</span>
             </div>
-            <div class="rounded-xl bg-neutral-50 border border-black/5 p-3">
-              <div class="text-lg font-bold">Unlimited</div>
-              <div class="text-xs text-neutral-500">requests</div>
-            </div>
-            <div class="rounded-xl bg-neutral-50 border border-black/5 p-3">
-              <div class="text-lg font-bold">Async</div>
-              <div class="text-xs text-neutral-500">no meetings</div>
-            </div>
+            <a href="#waitlist" class="mt-4 inline-flex w-full justify-center rounded-full bg-neutral-900 text-white px-4 py-2.5">Vote & join waitlist</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Divider headline  -->
     <div class="mx-auto max-w-4xl px-4 mt-6 md:mt-2 text-center">
-      <h2 class="text-2xl md:text-3xl font-bold">
-        The way app creatives <span class="font-serif italic">should’ve</span> been done in the first place
-      </h2>
+      <h2 class="text-2xl md:text-3xl font-bold">Help validate what an <span class="font-serif italic">actually useful</span> creative service for indies should be</h2>
     </div>
   </section>
 
-  <!-- Three colorful tiles -->
-  <section class="mx-auto max-w-6xl px-4 pt-10 md:pt-14">
+  <!-- WHY NOW / BENEFITS -->
+  <section id="why" class="mx-auto max-w-6xl px-4 pt-10 md:pt-14">
     <div class="grid md:grid-cols-3 gap-5">
-      <div class="rounded-3xl p-6 text-white shadow-glow" style="background:linear-gradient(135deg,#ff9a76 0%,#ff5dc8 100%);">
-        <h3 class="text-lg font-semibold">Subscribe</h3>
-        <p class="mt-1 text-white/90">Join the monthly plan and request as many designs as you’d like.</p>
-      </div>
       <div class="rounded-3xl p-6 text-white shadow-glow" style="background:linear-gradient(135deg,#00d0ff 0%,#7d63ff 100%);">
-        <h3 class="text-lg font-semibold">Request</h3>
-        <p class="mt-1 text-white/90">Queue your tasks—from App Store screenshots to icons and ads.</p>
+        <h3 class="text-lg font-semibold">Ship faster</h3>
+        <p class="mt-1 text-white/90">Queue creatives, get updates in 24–72h, keep building instead of art‑directing.</p>
+      </div>
+      <div class="rounded-3xl p-6 text-white shadow-glow" style="background:linear-gradient(135deg,#ff9a76 0%,#ff5dc8 100%);">
+        <h3 class="text-lg font-semibold">Designed for stores & ads</h3>
+        <p class="mt-1 text-white/90">Screenshots, icons, feature graphics, UGC hooks, ad variants — ready to test.</p>
       </div>
       <div class="rounded-3xl p-6 text-white shadow-glow" style="background:linear-gradient(135deg,#ffb86b 0%,#ff4b8a 100%);">
-        <h3 class="text-lg font-semibold">Receive</h3>
-        <p class="mt-1 text-white/90">Get updates in 24–72h on average. Iterate fast. Ship faster.</p>
+        <h3 class="text-lg font-semibold">Indie‑friendly</h3>
+        <p class="mt-1 text-white/90">Async, source files included, pause/resume. No meetings required.</p>
       </div>
     </div>
   </section>
 
-  <!-- Social proof strip -->
-  <section class="border-y border-black/5 mt-12">
-    <div class="mx-auto max-w-6xl px-4 py-6 text-center text-sm text-neutral-600">
-      Trusted by indie developers & small studios — built for shipping, not meetings.
-    </div>
-  </section>
-
-  <!-- WORK -->
+  <!-- WORK (placeholders) -->
   <section id="work" class="mx-auto max-w-6xl px-4 py-14">
-    <h2 class="text-2xl md:text-3xl font-bold text-center">Recent work</h2>
+    <h2 class="text-2xl md:text-3xl font-bold text-center">Sample work</h2>
     <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
       <div class="aspect-[9/16] rounded-2xl bg-neutral-100 border border-black/5"></div>
       <div class="aspect-[9/16] rounded-2xl bg-neutral-100 border border-black/5"></div>
@@ -166,94 +160,64 @@
 
   <!-- HOW IT WORKS -->
   <section id="how" class="mx-auto max-w-6xl px-4 pb-4">
-    <h2 class="text-2xl md:text-3xl font-bold text-center">How it works</h2>
+    <h2 class="text-2xl md:text-3xl font-bold text-center">How early‑access works</h2>
     <div class="mt-8 grid md:grid-cols-3 gap-5">
       <div class="rounded-2xl border border-black/5 bg-white p-6 shadow-card">
         <div class="text-sm text-neutral-500 mb-2">01</div>
-        <h3 class="font-semibold">Brief in Notion/Discord</h3>
-        <p class="text-neutral-600 mt-1">Share goals, platform, and assets. We ask only what’s essential.</p>
+        <h3 class="font-semibold">Join the list</h3>
+        <p class="text-neutral-600 mt-1">Add your email and (optional) answer 3 quick questions about needs & budget.</p>
       </div>
       <div class="rounded-2xl border border-black/5 bg-white p-6 shadow-card">
         <div class="text-sm text-neutral-500 mb-2">02</div>
-        <h3 class="font-semibold">Design & Iterate</h3>
-        <p class="text-neutral-600 mt-1">Receive updates within 24–72h. Comment, we refine.</p>
+        <h3 class="font-semibold">We shortlist</h3>
+        <p class="text-neutral-600 mt-1">Limited slots while validating. Founding members get priority and perks.</p>
       </div>
       <div class="rounded-2xl border border-black/5 bg-white p-6 shadow-card">
         <div class="text-sm text-neutral-500 mb-2">03</div>
-        <h3 class="font-semibold">Ship it</h3>
-        <p class="text-neutral-600 mt-1">Export‑ready files in all sizes plus copy variants.</p>
+        <h3 class="font-semibold">Start creating</h3>
+        <p class="text-neutral-600 mt-1">Kick off asynchronously. One active request at a time → true unlimited.</p>
       </div>
     </div>
   </section>
 
-  <!-- PRICING (single plan) -->
-  <section id="pricing" class="mx-auto max-w-6xl px-4 py-14">
-    <h2 class="text-3xl md:text-4xl font-bold text-center">One simple plan</h2>
-    <p class="text-neutral-600 text-center mt-2">Everything you need. No surprises.</p>
-
-    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-      <div class="rounded-3xl border border-black/5 bg-white p-7 md:p-8 shadow-card">
-        <h3 class="text-lg font-semibold">AppCreative</h3>
-        <p class="text-5xl font-extrabold mt-3 tracking-tight">€599<span class="text-base font-medium text-neutral-500">/mo</span></p>
-        <ul class="mt-5 space-y-2 text-neutral-700">
-          <li>• Unlimited requests (1 active at a time)</li>
-          <li>• App Store screenshots (iOS & Android)</li>
-          <li>• Preview video / motion snippets</li>
-          <li>• Icons, feature graphics, promo banners</li>
-          <li>• Copy frameworks & A/B variants</li>
-          <li>• 24–72h iterations, async</li>
-          <li>• Source files included</li>
-        </ul>
-        <a href="mailto:hello@appcreative.co?subject=Get%20Started%20for%20599" class="mt-7 inline-block w-full text-center px-4 py-3 rounded-full bg-neutral-900 text-white hover:opacity-90">Get started</a>
-        <p class="text-xs text-neutral-500 mt-3">Pause or cancel anytime.</p>
+  <!-- WAITLIST / FORM EMBED -->
+  <section id="waitlist" class="mx-auto max-w-4xl px-4 py-14">
+    <div class="rounded-3xl border border-black/5 bg-white p-6 md:p-8 shadow-card">
+      <h2 class="text-2xl md:text-3xl font-bold text-center">Join the waitlist</h2>
+      <p class="mt-2 text-center text-neutral-600">Leave your email. Optional: vote a price point and tell me your biggest creative bottleneck.</p>
+      <!-- Replace src with your real Tally/Typedream form; keep these query params for a clean embed. -->
+      <div class="mt-6 overflow-hidden rounded-2xl border border-black/5">
+        <iframe src="https://tally.so/r/waitlist?transparentBackground=1&hideTitle=1" width="100%" height="520" frameborder="0" title="Waitlist form"></iframe>
       </div>
-
-      <div class="rounded-3xl border border-black/5 bg-white p-7 md:p-8 shadow-card">
-        <h4 class="font-semibold">What’s included</h4>
-        <ul class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-neutral-700 text-sm">
-          <li>✓ Store screenshot systems</li>
-          <li>✓ Preview video edits</li>
-          <li>✓ Icon & feature graphic</li>
-          <li>✓ Ad creatives (static & motion)</li>
-          <li>✓ UGC hook scripts</li>
-          <li>✓ Localization support</li>
-        </ul>
-        <h4 class="font-semibold mt-6">What’s not</h4>
-        <ul class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-neutral-500 text-sm">
-          <li>✗ Full brand re‑designs</li>
-          <li>✗ In‑app feature development</li>
-          <li>✗ Long meetings</li>
-          <li>✗ Paid media buying</li>
-        </ul>
-      </div>
+      <p class="mt-3 text-xs text-neutral-500 text-center">Trouble with the embed? <a class="underline" href="https://tally.so/r/waitlist" target="_blank" rel="noopener">Open the form in a new tab</a>.</p>
     </div>
   </section>
 
-  <!-- FAQ -->
+  <!-- FAQ (kept concise) -->
   <section id="faq" class="mx-auto max-w-6xl px-4 pb-16">
     <h2 class="text-2xl md:text-3xl font-bold text-center">FAQ</h2>
     <div class="mt-6 grid md:grid-cols-2 gap-4">
       <details class="group p-5 rounded-2xl border border-black/5 bg-white open:shadow-card transition">
-        <summary class="cursor-pointer font-medium list-none flex items-center justify-between">How fast are turnarounds?<span class="text-neutral-500 group-open:rotate-45 transition">＋</span></summary>
-        <p class="text-neutral-600 mt-3">Usually 24–72 hours on business days per active request.</p>
+        <summary class="cursor-pointer font-medium list-none flex items-center justify-between">Is this live already?<span class="text-neutral-500 group-open:rotate-45 transition">＋</span></summary>
+        <p class="text-neutral-600 mt-3">This is a soft launch. I’m validating demand and scope. Founding members get first access and special pricing.</p>
       </details>
       <details class="group p-5 rounded-2xl border border-black/5 bg-white open:shadow-card transition">
-        <summary class="cursor-pointer font-medium list-none flex items-center justify-between">How do I submit tasks?<span class="text-neutral-500 group-open:rotate-45 transition">＋</span></summary>
-        <p class="text-neutral-600 mt-3">Via Notion/Discord or email. You’ll get a simple template on day one.</p>
+        <summary class="cursor-pointer font-medium list-none flex items-center justify-between">What will it cost?<span class="text-neutral-500 group-open:rotate-45 transition">＋</span></summary>
+        <p class="text-neutral-600 mt-3">We’re testing pricing with early users (e.g., €499, €999, €1499). Your feedback helps finalize it.</p>
       </details>
       <details class="group p-5 rounded-2xl border border-black/5 bg-white open:shadow-card transition">
-        <summary class="cursor-pointer font-medium list-none flex items-center justify-between">Can I pause?<span class="text-neutral-500 group-open:rotate-45 transition">＋</span></summary>
-        <p class="text-neutral-600 mt-3">Yes, pause anytime and resume later. No minimum term.</p>
+        <summary class="cursor-pointer font-medium list-none flex items-center justify-between">What deliverables are included?<span class="text-neutral-500 group-open:rotate-45 transition">＋</span></summary>
+        <p class="text-neutral-600 mt-3">App Store / Google Play screenshots, icons & feature graphics, ad creatives (static & light motion), copy variants, localization support.</p>
       </details>
       <details class="group p-5 rounded-2xl border border-black/5 bg-white open:shadow-card transition">
-        <summary class="cursor-pointer font-medium list-none flex items-center justify-between">Do I get source files?<span class="text-neutral-500 group-open:rotate-45 transition">＋</span></summary>
-        <p class="text-neutral-600 mt-3">Absolutely. Final assets plus Figma / After Effects sources are yours.</p>
+        <summary class="cursor-pointer font-medium list-none flex items-center justify-between">Do you provide source files?<span class="text-neutral-500 group-open:rotate-45 transition">＋</span></summary>
+        <p class="text-neutral-600 mt-3">Yes. Final assets plus editable sources (Figma / After Effects when relevant).</p>
       </details>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="border-top border-black/5">
+  <footer class="border-t border-black/5">
     <div class="mx-auto max-w-6xl px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-3 text-sm">
       <p class="text-neutral-600">© <span id="y"></span> AppCreative</p>
       <div class="flex items-center gap-4">
@@ -264,6 +228,28 @@
     </div>
   </footer>
 
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <!-- Cookie / Privacy banner (lightweight) -->
+  <div id="cookie" class="fixed inset-x-3 bottom-3 z-50 hidden">
+    <div class="mx-auto max-w-6xl rounded-2xl border border-black/10 bg-white shadow-card p-4 md:p-5 flex flex-col md:flex-row items-center gap-3">
+      <p class="text-sm text-neutral-700">We use basic analytics (privacy‑friendly) to understand interest during this soft launch. No tracking pixels.
+      </p>
+      <div class="flex items-center gap-2 md:ml-auto">
+        <button class="px-4 py-2 rounded-full border border-black/10 hover:bg-black/5 text-sm" onclick="hideCookie(true)">Decline</button>
+        <button class="px-4 py-2 rounded-full bg-neutral-900 text-white text-sm" onclick="hideCookie(true)">Accept</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent=new Date().getFullYear()
+    const key='ac_cookie_ok';
+    function hideCookie(set){
+      if(set) localStorage.setItem(key,'1');
+      document.getElementById('cookie').classList.add('hidden');
+    }
+    if(!localStorage.getItem(key)){
+      document.getElementById('cookie').classList.remove('hidden');
+    }
+  </script>
 </body>
 </html>
